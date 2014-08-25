@@ -1,79 +1,57 @@
 <!DOCTYPE html>
 <html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AmHexo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="css/amui.all.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+<body>
+<nav>
+    <a id="blog-nav-button" href="javascript: void(0)"  class="am-btn am-btn-primary" data-am-collapse="{target: '#collapse-nav'}">
+        <i class="am-menu-toggle-icon am-icon-bars"></i>
+    </a>
+    <ul id="collapse-nav" class=" am-nav am-collapse blog-nav">
+        <li class="am-active"><a href="index.html"><i class="am-icon-home "></i><span class="blog-nav-text">首页</span></a></li>
+        <li><a href="archive.html"><i class="am-icon-archive"></i><span class="blog-nav-text">文章</span></a></li>
+        <li><a href="tags.html"><i class="am-icon-tag"></i><span class="blog-nav-text">分类</span></a></li>
+        <li><a href="links.html"><i class="am-icon-link"></i><span class="blog-nav-text">连接</span></a></li>
+    </ul>
+</nav>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Hexo-theme-amhexo : A hexo theme">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Hexo-theme-amhexo</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/moyuqi/hexo-theme-AmHexo">View on GitHub</a>
-
-          <h1 id="project_title">Hexo-theme-amhexo</h1>
-          <h2 id="project_tagline">A hexo theme</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/moyuqi/hexo-theme-AmHexo/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/moyuqi/hexo-theme-AmHexo/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<div class="am-container">
+    <div class="blog-index">
+        <div class="">
+            <img width="180" height="180" src="http://tp4.sinaimg.cn/1631244195/180/40062704724/1" alt="陌羽蕲moyuqi" class="am-img-circle am-center ">
+        </div>
+        <div>
+            <h1>@陌羽蕲moyuqi</h1>
+            <div>爱编程，爱P图，爱特摄。</div>
+            <div>关注前端开发与交互，知识管理，时间管理，思维导图。</div>
+            <div>喜欢JavaScript,jQuery,也爱ExtJs,Bootstrap。</div>
+            <div>我，只是一名路过的前端攻城狮。</div>
+        </div>
+        <hr>
+        <div class="am-fr">
+            <h1>出没地</h1>
+            <div>Blog：<a target="_blank" href="http://www.zhenghongen.cn"></a><a href="http://www.zhenghongen.cn">http://www.zhenghongen.cn</a> <br></div>
+            <div>WeiBo: <a target="_blank" href="http://weibo.com/123891227"></a><a href="http://weibo.com/123891227">http://weibo.com/123891227</a>  <br></div>
+            <div>ZhiHu: <a target="_blank" href="http://www.zhihu.com/people/moyuqi"></a><a href="http://www.zhihu.com/people/moyuqi">http://www.zhihu.com/people/moyuqi</a> <br></div>
+            <div>DouBan: <a target="_blank" href="http://www.douban.com/people/zhenghe1227/"></a><a href="http://www.douban.com/people/zhenghe1227/">http://www.douban.com/people/zhenghe1227/</a> <br></div>
+            <div>OsChina: <a target="_blank" href="http://my.oschina.net/moyuqi"></a><a href="http://my.oschina.net/moyuqi">http://my.oschina.net/moyuqi</a> <br></div>
+            <div>GitHub: <a target="_blank" href="https://github.com/moyuqi"></a><a href="https://github.com/moyuqi">https://github.com/moyuqi</a> <br></div>
+        </div>
     </div>
+</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Hexo-theme-amhexo maintained by <a href="https://github.com/moyuqi">moyuqi</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+<script src="js/zepto.min.js"></script>
+<script src="js/amui.min.js"></script>
+<script src="js/amui.widget.helper.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
