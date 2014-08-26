@@ -1,18 +1,20 @@
 /* Write your styles */
 
 @media only screen {
-    .blog-nav{
+    .blog-nav {
 
     }
-    .blog-nav li a{
-        border: 1px solid ;
+
+    .blog-nav li a {
+        border: 1px solid;
     }
+
     .blog-nav-text {
         padding: 0px 10px;
         display: inline;
     }
 
-    .blog-index{
+    .blog-index {
         margin-top: 40px;
         margin-bottom: auto;
         vertical-align: middle;
@@ -26,7 +28,7 @@
         margin: 10px 0 20px 0;
     }
 
-    .blog-title > span >a,.blog-title > span ol li:first-child {
+    .blog-title > span > a, .blog-title > span ol li:first-child {
         border-left: 3px solid #0e90d2;
         bottom: 8px;
         left: 2px;
@@ -34,7 +36,7 @@
         padding-left: 5px;
     }
 
-    .blog-title > span ol{
+    .blog-title > span ol {
         padding-left: 0em;
         padding-bottom: 0.1em;
     }
@@ -64,6 +66,15 @@
     .blog-tags a {
         margin-top: 0.5em;
     }
+
+    .blog-footer {
+        margin-top: 1em;
+        border-top: 1px solid #0e90d2;
+    }
+
+    .blog-footer p {
+        margin: 0 1em;
+    }
 }
 
 @media only screen and (min-width: 641px) {
@@ -87,8 +98,12 @@
         /*display: none;*/
     }
 
-    #blog-nav-button{
+    #blog-nav-button {
         display: none;
+    }
+
+    .blog-container{
+        min-height: 580px;
     }
 }
 

@@ -13,36 +13,225 @@
     <link rel="stylesheet" href="css/app.css"/>
 <body>
 <nav>
-    <a id="blog-nav-button" href="javascript: void(0)"  class="am-btn am-btn-primary" data-am-collapse="{target: '#collapse-nav'}">
+    <a id="blog-nav-button" href="javascript: void(0)" class="am-btn am-btn-primary"
+       data-am-collapse="{target: '#collapse-nav'}">
         <i class="am-menu-toggle-icon am-icon-bars"></i>
     </a>
+
     <div class="am-cf"></div>
     <ul id="collapse-nav" class=" am-nav am-collapse blog-nav">
         <li><a href="index.html"><i class="am-icon-home "></i><span class="blog-nav-text">首页</span></a></li>
-        <li class="am-active"><a href="archive.html"><i class="am-icon-archive"></i><span class="blog-nav-text">文章</span></a></li>
+        <li class="am-active"><a href="archive.html"><i class="am-icon-archive"></i><span
+                class="blog-nav-text">文章</span></a></li>
         <li><a href="tags.html"><i class="am-icon-tag"></i><span class="blog-nav-text">分类</span></a></li>
         <li><a href="links.html"><i class="am-icon-link"></i><span class="blog-nav-text">连接</span></a></li>
     </ul>
 </nav>
-<div class="am-container">
+<div class="am-container blog-container">
     <article class="am-article blog-article">
         <div class="am-article-hd">
             <h3 class="am-article-title blog-title">
                 <span class="an-fl blog-title-fl">
-                    <a href="#">Google fonts 的字體（display 篇）</a>
+                    <a href="#">企业博客、MetaWeblog 和 XML-RPC</a>
                 </span>
                 <span class="am-fr am-kai blog-title-fr">2014/07/12</span>
             </h3>
             <h4 class="am-article-meta blog-article-meta">
-                <span><i class="am-icon-tags"></i> 标签: <a class="am-badge am-badge-primary">Free</a></span>
+                <span><i class="am-icon-tags"></i> 标签: <a class="am-badge am-badge-primary">MetaWeblog</a></span>
             </h4>
         </div>
         <div class="am-article-bd">
-            <p class="am-article-lead">文章摘要、导读等信息</p>
+            <p class="am-article-lead">如今，许多人都熟悉个人和公司或业界主办的博客。后者明显成为了传统公司和行业网站的下一代新兴产物。博客的内容涉及从简洁的特制产品公告和公共关系到实用且深刻的主题探索，这些主题可能对公司的产品或行业的未来方向相关。
+            </p>
 
-            <div class="am-g blog-content">
+            <div class="">
+                <h2>常用缩写词</h2>
+                <ul class="ibm-bullet-list">
+                    <li>API：应用程序编程接口</li>
+                    <li>FTP：文件传输协议</li>
+                    <li>HTTP：超文本传输协议</li>
+                    <li>IT：信息技术</li>
+                    <li>MIME：多媒体 Internet 邮件扩展（Multimedia Internet Mail Extensions）</li>
+                    <li>RFC：请求注解（Request for comments）</li>
+                    <li>RPC：远程过程调用</li>
+                    <li>RSS：真正简单的联合（Really Simple Syndication）</li>
+                    <li>SQL：结构化查询语言</li>
+                    <li>URL：统一资源定位符</li>
+                    <li>XML：可扩展标记语言</li>
+                </ul>
+                <p>随着实际提供更新和有用信息的企业和行业博客的成功推出，人们越来越注重将博客作为企业内部的通信和讨论机制。采用博客的组织应该将博客相关任务部署在企业 IT
+                    基础设施附近，就像任何其他增强一样。企业内部博客通常包含与业务相关的讨论和信息，必须由组织的 IT 人员管理。选者正确的博客平台是关键的第一步。
+                </p>
+
+                <p>选择支持开放博客 API 的开放平台能够为用户和管理员带来显著的优势。对于用户，这意味着他们可以使用广泛的流行应用程序（从浏览器插件到特定于平台的客户端应用程序）添加博客文章。对于管理员，支持公共 API
+                    可以支持使用或开发管理性应用程序。
+                </p>
+
+                <p>有许多标准博客 API 可供使用。在编写本文时，使用最广泛且支持最广泛的 API 包括：
+                </p>
+                <ul class="ibm-bullet-list">
+                    <li><strong>Blogger。</strong>历史最悠久的博客 API。Blogger 是一个基于 XML-RPC 的接口，最初由 Pyra Labs 为他们的 Blogger
+                        软件创建。第一个版本很快得到了许多其他博客平台的采用，因为它使用 XML 作为数据提交和交换的标准机制，还因为它使用 XML-RPC 标准来支持可以使用 XML-RPC
+                        的任何编程语言的实现。Google 于 2003 年购买了 Blogger，不久之后 Blogger 2.0 API 就出现了 — 它现在成为了一个 <a
+                                href="http://code.google.com/apis/gdata">Google Data API</a>。
+                    </li>
+                    <li><strong>MetaWeblog。</strong>由软件开发人员 Dave Winer 于 2002 年创建，目的在于解决 Blogger 1.0 API 中已发现的限制。MetaWeblog
+                        API 是一个基于 XML-RPC 的 API，使用了 RSS Web feed 格式（最流行的就是 <code>&lt;item&gt;</code> 标签）、以结构化数据（而不是 Blogger
+                        API 支持的简单字符串）形式查看博客文章等概念。这种集成使开发人员能够使用熟悉的模型创建、提交、管理和查询结构化博客文章。
+                    </li>
+                    <li><strong>Atom。</strong>这种基于 XML 的 API 也称为 <em>Atom 发布协议（Atom Publishing Protocol）</em>，使用 Web 服务而不是
+                        XML-RPC 作为其线级（wire-level）协议，通过利用现有的 HTTP 认证机制实现更强的安全性，支持一些个性的特性，比如使用网页标题中合适的 <code>
+                            &lt;link&gt;</code> 标签来发现 API。参见 <a href="#resources">参考资料</a> 了解关于此协议的更多信息。
+                    </li>
+                </ul>
+                <p>本文主要介绍 MetaWeblog。</p>
+
+
+                <h2 id="choosing_platform">选择博客平台</h2>
+
+                <p>支持 MetaWeblog API 的最流行的博客软件包都是开源的，因此可以在面向内部的企业基础设施中安装和使用。流行的选择包括：
+                </p>
+                <ul class="ibm-bullet-list">
+                    <li><strong><a href="http://blogcms.com/">BLOG:CMS</a>。</strong>这个 GNU General Public License (GPL) 包需要
+                        Apache Web Server、PHP 和一个 SQL 数据库，比如 MySQL 或 SQLite。
+                    </li>
+                    <li><strong><a href="http://wiki.blojsom.com/wiki/display/blojsom3/About+blojsom">Blojsom</a>。</strong>这个
+                        Berkeley Software Distribution (BSD) 许可包需要使用 Java™ 语言，一个 JavaServer Pages (JSP) 应用服务器，比如 JBoss、Jetty
+                        或 Apache Tomcat，以及一个 SQL 数据库。
+                    </li>
+                    <li><strong><a href="http://drupal.org/">Drupal</a>。</strong>尽管 Drupal 主要用作一个内容管理系统 (CMS)，但该 GPL 包也支持
+                        MetaWeblog。Drupal 需要一个 Apache 或 Microsoft® Internet Information Services (IIS) Web 服务器，PHP，以及 MySQL
+                        或 PostgreSQL。对 Microsoft SQL Server 的支持正在开发中。
+                    </li>
+                    <li><strong><a href="http://www.movabletype.org/">Movable Type</a>。</strong>这个 GPL 包需要一个 Apache 或 IIS
+                        Web 服务器、PHP 和 Perl，以及一个 SQL 数据库。Movable Type 开发社区最近创建了 <a
+                                href="http://openmelody.org/">OpenMelody</a>，这个工具虽然是新兴的，但值得研究。
+                    </li>
+                    <li><strong><a href="http://pebble.sourceforge.net/">Pebble</a>。</strong>这个 BSD 许可的包是围绕 MetaWeblog
+                        编写的，需要 Java 语言和一个 JSP 2.0/Servlet 2.4 应用服务器，比如 Tomcat。内容以 XML 格式存储在服务器上，所以不需要数据库。
+                    </li>
+                    <li><strong><a href="http://roller.apache.org/">Roller</a>。</strong>这个 Apache 许可的包来自 Apache
+                        Foundation，需要 Java 语言，一个 JSP 2.0/Servlet 2.4 应用服务器（比如 Tomcat）和一个 SQL 数据库。
+                    </li>
+                    <li><strong><a href="http://mu.wordpress.org/">WordPress</a>。</strong>这个 GPL 包需要 Apache Web 服务器、Perl 和
+                        MySQL。
+                    </li>
+                </ul>
+                <p>决定最初使用哪个包取决于您的 Web 基础设施针对的是 Web 服务器还是应用服务器。WordPress 和 Movable Type 能够迅速识别经验丰富的博客作者，BLOG:CMS 和 Drupal
+                    仅需要一个 Web 服务器。Blojsom、Pebble 和 Roller 都是流行的博客包，它们都需要一个应用服务器，但它们的关系数据库需求各不相同（Pebble 不需要关系数据库！）。
+                </p>
+
+                <div class="ibm-alternate-rule"></div>
+                <p class="ibm-ind-link ibm-back-to-top"><br></p>
+
+                <h2 id="metaweblog-api-overview">MetaWeblog API</h2>
+
+                <p>MetaWeblog API 支持使用任何支持它的软件包发布、检索和编辑博客文章。许多人只是通过博客提供的编辑器在线创建博客文章，而 MetaWeblog API
+                    支持使用更加丰富的编辑软件，从桌面包到基于浏览器的包，比如 ScribeFire（将在 <a href="#scribefire">本文后面的内容中</a> 讨论）。MetaWeblog API
+                    还简化了系统管理对博客文章的备份和归档，简化了在必要时迁移到其他博客包的过程。
+                </p>
+
+                <p>该 API 包含比较少的方法。这些方法简化了对该 API 的掌握，它们包括：</p>
+                <ul class="ibm-bullet-list">
+                    <li><strong>editPost</strong>
+
+                        <div class="codesection"><pre class="displaycode">  boolean metaWeblog.editPost(string postid,
+                              string username,
+                              string password,
+                              struct content,
+                              boolean publish)</pre>
+                        </div>
+                    </li>
+                    <li><strong>getCategories</strong>
+
+                        <div class="codesection"><pre class="displaycode">  struct metaWeblog.getCategories(string blogid,
+                                  string username,
+                                  string password)</pre>
+                        </div>
+                    </li>
+                    <li><strong>getPost</strong>
+
+                        <div class="codesection"><pre class="displaycode">  struct metaWeblog.getPost(string postid,
+                            string username,
+                            string password)</pre>
+                        </div>
+                    </li>
+                    <li><strong>getRecentPosts</strong>
+
+                        <div class="codesection"><pre class="displaycode">  struct metaWeblog.getRecentPosts(string postid,
+                                   string username,
+                                   string password,
+                                   integer numberOfPosts)</pre>
+                        </div>
+                    </li>
+                    <li><strong>newMediaObject</strong>
+
+                        <div class="codesection"><pre class="displaycode">  struct metaWeblog.newMediaObject(string blogid,
+                                   string username,
+                                   string password,
+                                   struct content)</pre>
+                        </div>
+                    </li>
+                    <li><strong>newPost</strong>
+
+                        <div class="codesection"><pre class="displaycode">  string Post metaWeblog.newPost(string blogid,
+                                 string username,
+                                 string password,
+                                 struct content,
+                                 boolean publish)</pre>
+                        </div>
+                    </li>
+                </ul>
+                <p>这些方法的参数包括：</p>
+                <ul class="ibm-bullet-list">
+                    <li><strong><code>blogid</code>。</strong>标识您想要连接到的博客。
+                    </li>
+                    <li><strong><code>content</code>。</strong>一种包含博客文章数据的结构。
+
+                        <p>已为此结构定义的成员包括 RSS 2.0 中 <code>&lt;item&gt;</code> 类型的可能值：<code>author</code>、<code>category</code>、<code>comments</code>、<code>description</code>、<code>enclosure</code>、<code>guid</code>、<code>link</code>、<code>pubDate</code>、<code>source</code>
+                            和 <code>title</code>。这些标准值形成一个广泛流行的博客内容和元数据字典。<code>enclosure</code> 等具有强制属性的 RSS
+                            项通过一种结构来传输，这种结构的成员提供了这些值。对于博客文章，这种结构的 3 个主要成员包括 <code>title</code>、<code>link</code> 和 <code>description</code>。
+                        </p>
+
+                        <p><code>newMediaObject</code> 方法支持将一个文件（通常是音频或视频文件）传输到博客服务器。此方法要求您提供的结构包含成员 <em>bits</em>（文件的实际内容，采用
+                            base64 编码格式）、<em>name</em>（在博客服务器上使用的文件名）和 <em>type</em>（文件的 MIME 类型）。
+                        </p></li>
+                    <li><strong><code>numberOfPosts</code>。</strong>指定要检索的最大博客数量。
+                    </li>
+                    <li><strong><code>password</code>。</strong>指定想要用于验证博客的密码。
+                    </li>
+                    <li><strong><code>postid</code>。</strong>标识想要编辑或检索的特定博客文章。
+                    </li>
+                    <li><strong><code>publish</code>。</strong>指定您希望发布博客文章 (True) 还是将新的/更新的博客文章存储为草稿 (False)。
+                    </li>
+                    <li><strong><code>username</code>。</strong>指定想要用于验证博客的用户名。
+                    </li>
+                </ul>
+                <p><code>metaWeblog</code> 方法返回以下参数：</p>
+                <ul class="ibm-bullet-list">
+                    <li><strong><code>editPost</code>。</strong>始终返回 True。</li>
+                    <li><strong><code>getCategories</code>。</strong>返回一个机构体，它标识了每个可用的类别，具有 3 个字符串成员：<code>description</code>、<code>htmlUrl</code>
+                        和 <code>rssUrl</code>。
+                    </li>
+                    <li><strong><code>getPost</code>。</strong>返回具有成员的结构体，这些成员也可在以参数形式提供给 <code>newPost</code> 和 <code>editPost</code>
+                        方法的结构体中使用。
+                    </li>
+                    <li><strong><code>getRecentPosts</code>。</strong>返回一个与最近的博客文章对应的结构体数组。数组中的每个结构体包含的成员与调用
+                        <code>getPost</code> 返回的成员相同。
+                    </li>
+                    <li><strong><code>newMediaObject</code>。</strong>返回一个结构体，其中包含一个名为 <code>url</code> 的成员，该成员使用 HTTP 或 FTP
+                        格式提供文件的 URL。
+                    </li>
+                    <li><strong><code>newPost</code>。</strong>返回一个字符串，该字符串可用作对 <code>editPost</code> 或 <code>getPost</code>
+                        的调用中的 <code>blogid</code>。
+                    </li>
+                </ul>
+                <p>本文来源于:<a href="http://www.ibm.com/developerworks/cn/xml/x-metablog/"> http://www.ibm.com/developerworks/cn/xml/x-metablog/</a></p>
+            </div>
+
+            <!--<div class="am-g">
                 <div class="col-lg-7">
-                    <p><!-- 本demo来自 http://blog.justfont.com/ -->你自信滿滿的跟客戶進行第一次 demo。秀出你精心設計的內容時，你原本期許客戶冷不防地掉下感動的眼淚。</p>
+                    <p>&lt;!&ndash; 本demo来自 http://blog.justfont.com/ &ndash;&gt;你自信滿滿的跟客戶進行第一次 demo。秀出你精心設計的內容時，你原本期許客戶冷不防地掉下感動的眼淚。</p>
 
                     <p>因為那實在是太高級了。</p>
 
@@ -59,12 +248,25 @@
 
                     <p>「我要一種比較跳的感覺懂嗎？」</p>
                 </div>
-            </div>
+            </div>-->
             <hr class="am-article-divider blog-hr">
         </div>
     </article>
 </div>
+<footer class="am-footer am-footer-default blog-footer">
+    <div class="am-footer-miscs ">
+        <p> &copy; 2014 MoYuQi <span class="am-footer-divider">|</span> <a href="/sitemap.xml">网站地图</a>
 
+        <p>
+            <span>Blog powered by <strong><a href="http://zespia.tw/hexo/zh-CN/">Hexo</a></strong></span>
+            <span>
+                <span class="am-footer-divider">|</span> Theme <strong><a
+                    href="http://zhenghongen.cn/hexo-theme-AmHexo">AmHexo</a></strong>
+            </span>
+            <span><span class="am-footer-divider">|</span> Desgined by<strong><a href="http://www.zhenghongen.cn/">MoYuQi</a></strong></span>
+        </p>
+    </div>
+</footer>
 <script src="js/zepto.min.js"></script>
 <script src="js/amui.min.js"></script>
 <script src="js/amui.widget.helper.min.js"></script>
