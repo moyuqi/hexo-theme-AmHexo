@@ -1,0 +1,20 @@
+<h3 class="am-article-title blog-title">
+    <span class="an-fl blog-title-fl">
+    <% if (item.link){ %>
+      <% if (item.title){ %>
+        <a href="<%- item.link %>" target="_blank"><%= item.title %></a>
+      <% } else { %>
+        <a href="<%- item.link %>" target="_blank"><%= item.link %></a>
+      <% } %>
+    <% } else { %>
+      <% if (index){ %>
+       <a href="<%- config.root %><%- item.path %>"><%= item.title %></a>
+      <% } else { %>
+       <%= item.title %>
+      <% } %>
+    <% } %>
+    </span>
+    <span class="am-fr am-kai blog-title-fr">
+    <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+    </span>
+</h3>

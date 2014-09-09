@@ -1,0 +1,44 @@
+menu:
+  Home: /
+  Archives: /archives
+  #Tags: /tags
+  #Links: /links
+
+menuIcon:
+  Home: home
+  Archives: archive
+  #Tags: tag
+  #Links: link
+
+links:
+  Hexo: http://hexo.io/
+  MoYuQi: http://zhenghongen.cn
+  AMHexo: https://github.com/moyuqi/hexo-theme-AmHexo
+  MoHexo: https://github.com/moyuqi/hexo-theme-MoHexo
+
+links_des:
+  Hexo: 一个Github blog系统
+  MoYuQi: AmHexo主题作者
+  AMHexo: 基于Amazeui的Hexo主题
+  MoHexo: 基于Bootstraps的Hexo主题
+
+excerpt_link: Read More
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics:
+rss:
+duoshuo_shortname:

@@ -1,0 +1,38 @@
+<article class="am-article blog-article <%= item.layout %>">
+    <div class="am-article-hd">
+        <%- partial('post/title') %>
+        <h4 class="am-article-meta blog-article-meta">
+           <%- partial('post/category') %>
+           <%- partial('post/tag') %>
+        </h4>
+    </div>
+    <div class="am-article-bd">
+        <% if (item.excerpt && index){ %>
+            <p class="am-article-lead">   <%- item.excerpt %></p>
+        <% } else { %>
+            <% if (item.photos){ %>
+                <%- partial('post/gallery') %>
+            <% } %>
+            <div><%- item.content %></div>
+        <% } %>
+        <div class="am-cf"></div>
+        <% if (index){ %>
+            <% if (item.excerpt){ %>
+                <div class="alignleft">
+                    <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+                </div>
+            <% } %>
+            <% if (item.comment && config.disqus_shortname){ %>
+                <div class="alignright">
+                  <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+                </div>
+            <% } %>
+        <% } else { %>
+            <%- partial('post/baidushare') %>
+        <% } %>
+        <div class="am-cf"></div>
+        <hr class="am-article-divider blog-article-hr">
+    </div>
+    <div class="am-cf"></div>
+</article>
+<%- partial('comment') %>

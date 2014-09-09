@@ -1,0 +1,8 @@
+<ul class="am-pagination blog-pagination">
+    <% if (page.prev){ %>
+        <li class="am-pagination-prev"><a href="<%- config.root %><%- page.prev_link %>">&laquo; <%= __('prev') %></a></li>
+    <% } %>
+    <% if (page.next){ %>
+        <li class="am-pagination-next"><a href="<%- config.root %><%- page.next_link %>"><%= __('next') %> &raquo;</a></li>
+    <% } %>
+</ul>
