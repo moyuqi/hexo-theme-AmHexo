@@ -1,4 +1,7 @@
-(function () {
-    // Write your code below.
+(function($) {
+  'use strict';
 
-})(window.Zepto);
+  $(function() {
+
+  });
+})(jQuery);
